@@ -1,0 +1,40 @@
+@import 'src/variables';
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .severity-filter {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 5px;
+
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+    }
+  }
+}

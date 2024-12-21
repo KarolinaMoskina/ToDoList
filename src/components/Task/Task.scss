@@ -1,0 +1,43 @@
+@import 'src/variables';
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: $padding-medium;
+  margin: 5px 0;
+  border-radius: $border-radius;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.95);
+
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover &__delete-btn {
+    opacity: 1;
+  }
+
+  .delete-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}
